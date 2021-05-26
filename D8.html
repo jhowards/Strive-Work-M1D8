@@ -36,17 +36,19 @@
        let getURL = document.getElementsByTagName("a");
         for (let i = 0; i < getURL.length; i++) {
         getURL[i].href = "https://www.google.com"
-}
-        }
-        
-        
+          }
+          }
+               
 
       /* EXERCISE 5
        Write a function for adding a new item in the second list.
        */
 
       const addToTheSecond = function (content) {
-        //
+        let list = document.getElementById("secondList")
+        let newList = document.createElement("li")
+        newList.textContent = content
+        list.appendChild(newList)
       };
 
       /* EXERCISE 6
