@@ -15,7 +15,7 @@
       */
 
       const addClassToTitle = function (myHeading) {
-        let grabTitle = document.querySelector("title")
+        const grabTitle = document.querySelector("title")
         grabTitle.className = myHeading
       };
 
@@ -24,16 +24,22 @@
       */
 
       const changePcontent = function () {
-        //
+        const pText = document.querySelector("div p") 
+       pText.innerText = "This text has been changed"
       };
 
       /* EXERCISE 4
       Write a function for changing the destination of every link to https://www.google.com
       */
 
-      const changeUrls = function () {
-        //
-      };
+      const changeUrls = function () {       
+       let getURL = document.getElementsByTagName("a");
+        for (let i = 0; i < getURL.length; i++) {
+        getURL[i].href = "https://www.google.com"
+}
+        }
+        
+        
 
       /* EXERCISE 5
        Write a function for adding a new item in the second list.
