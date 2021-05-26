@@ -86,7 +86,12 @@
       */
 
       const makeItClickable = function () {
-        //
+        let header = document.querySelector("header")
+        
+        header.addEventListener('click', function(e) {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16); // code from D7 exercise
+        header.style.backgroundColor = "#" + randomColor 
+        })
       };
 
       /* EXERCISE 10
@@ -94,7 +99,11 @@
       */
 
       const changeFooterText = function () {
-        //
+        let footer = document.querySelector("footer")
+        
+        footer.addEventListener('click', function(e) {
+        footer.textContent = "This footer has been changed"
+        })
       };
 
       /* EXERCISE 11
