@@ -33,7 +33,7 @@
       */
 
       const changeUrls = function () {       
-       let getURL = document.getElementsByTagName("a");
+       let getURL = document.getElementsByTagName("a")
         for (let i = 0; i < getURL.length; i++) {
         getURL[i].href = "https://www.google.com"
           }
@@ -56,7 +56,10 @@
       */
 
       const addParagraph = function (content) {
-        //
+        let div = document.getElementsByTagName("div")[1]
+        let newP = document.createElement("p")
+        newP.textContent = content
+        div.appendChild(newP)
       };
 
       /* EXERCISE 7
